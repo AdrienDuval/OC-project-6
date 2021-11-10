@@ -1,1 +1,10 @@
-
+img {
+    width: 100%;
+    height: 30vw;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    text-transform: uppercase;
+}
