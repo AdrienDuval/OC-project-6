@@ -42,7 +42,7 @@ div {
     align-items: center;
 }
 .logo {
-    width: 20%;
+    width: 18%;
     display: flex;
     justify-content: start;
     margin-left: 30px;
@@ -51,12 +51,12 @@ div {
     width: 80%;
   }
   nav {
-    width: 50%;
+    width: 53%;
     display: flex;
 justify-content: center;
   }
   .our-phographer {
-    width: 30%;
+    width: 28%;
     display: flex;
 justify-content: end;
   }
@@ -74,8 +74,10 @@ justify-content: end;
 }
 
 .header-content-sec-2 a {
-    font-size: 13px;
-  }
+  font-size: 13px;
+  color: #901C1C;
+  font-weight: 600;
+}
 
 .header-sec-1 a {
     font-size: 18px;
@@ -116,6 +118,8 @@ justify-content: end;
       margin-top: 40px;
     width: 100%;
     font-size: 13px;
+    color: #901C1C !important;
+    font-weight: 600;
   }
   .elements-content {
       display: flex;
@@ -164,6 +168,87 @@ justify-content: end;
 .responsive-menu-mobile {
   display: none;
 }
+
+/* ------------------------------------- photographer style -----------------------------*/
+
+
+
+.logo.photographer-logo {
+  margin-top: 70px;
+}
+
+nav.photographer-category a {
+  color: #901C1C;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px;
+  
+}
+
+.head-photographer-page-content {
+  background-color: #FAFAFA !important;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.photographer-category.photographer-page {
+  justify-content: flex-start !important;
+}
+
+.photgrapher-image {
+    width: 20%;
+}
+
+.photgrapher-image img {
+    object-fit: cover;
+    height: 216px;
+    border-radius: 100%;
+    width: 216px;
+}
+
+.photographer-page-elements-content {
+  width: 70%;
+}
+
+.head-photographer-page .elements-a{
+  font-size: 64px !important;
+  margin-top: 0px !important;
+  
+}
+.head-photographer-page .country {
+  font-size: 24px;
+  color: #901C1C;
+  font-weight: 500;
+}
+.head-photographer-page .description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #525252;
+  margin: 15px auto;
+}
+.contactme-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactme-div button {
+  border: none;
+  margin-left: 137px;
+  height: 59px;
+  margin-top: 10px;
+  padding: 17px;
+  background-color: #901C1C;
+  border-radius: 11px;
+}
+
+.contactme-div button a {
+  font-size: 20px;
+  padding: 23px;
+  color: white;
+}
+/* ------------------------------------------------------------------------------- */ 
+
 /* responsiveness section */
 
 @media only screen and (max-width: 950px) {
@@ -175,11 +260,12 @@ justify-content: end;
   margin-left: 0px;
 }
 .logo img {
-  width: 100%;
+  width: 100%; 
 }
 .header-content-sec-2 {
   flex-wrap: wrap;
   margin: 30px 20px;
+  justify-content: space-between;
 }
 nav {
   width: 100%;
