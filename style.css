@@ -171,13 +171,15 @@ justify-content: end;
 
 /* ------------------------------------- photographer style -----------------------------*/
 
+body.phographers .logo {
+  margin-top: 60px;
+}
 
-
-.logo.photographer-logo {
+.phographers .phographers .logo.photographer-logo {
   margin-top: 70px;
 }
 
-.photographer-page a {
+.phographers .photographer-page a {
   color: #901C1C;
   font-weight: 600;
   font-size: 18px;
@@ -185,54 +187,54 @@ justify-content: end;
   
 }
 
-.head-photographer-page-content {
+.phographers .head-photographer-page-content {
   background-color: #FAFAFA !important;
   padding: 30px 0px;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
 }
-.photographer-category.photographer-page {
+.phographers .photographer-category.photographer-page {
   justify-content: flex-start !important;
 }
 
-.photgrapher-image {
+.phographers .photgrapher-image {
     width: 20%;
 }
 
-.photgrapher-image img {
+.phographers .photgrapher-image img {
     object-fit: cover;
     height: 216px;
     border-radius: 100%;
     width: 216px;
 }
 
-.photographer-page-elements-content {
+.phographers .photographer-page-elements-content {
   width: 70%;
 }
 
-.head-photographer-page .elements-a{
+.phographers .head-photographer-page .elements-a{
   font-size: 64px !important;
   margin-top: 0px !important;
   
 }
-.head-photographer-page .country {
+.phographers .head-photographer-page .country {
   font-size: 24px;
   color: #901C1C;
   font-weight: 500;
 }
-.head-photographer-page .description {
+.phographers .head-photographer-page .description {
   font-size: 18px;
   font-weight: 400;
   color: #525252;
   margin: 15px auto;
 }
-.contactme-div {
+.phographers .contactme-div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.contactme-div button {
+.phographers .contactme-div button {
   border: none;
   margin-left: 137px;
   height: 59px;
@@ -242,12 +244,12 @@ justify-content: end;
   border-radius: 11px;
 }
 
-.contactme-div button a {
+.phographers .contactme-div button a {
   font-size: 20px;
   padding: 23px;
   color: white;
 }
-select {
+.phographers select {
   border: 1px solid #901C1C;
   background-color: #901C1C;
   padding: 10px;
@@ -258,69 +260,69 @@ select {
   font-weight: 500;
 }
 
-label {
+.phographers label {
   font-size: 20px;
   font-weight: 600;
 }
 
-.single-image {
+.phographers .single-image {
   width: 27%;
   color:#901C1C;
 }
 
-.single-image img {
+.phographers .single-image img {
   width:100%;
   height: 330px;
   object-fit: cover;
   border-radius: 7px;
 }
-.photographer-body__image {
+.phographers .photographer-body__image {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.single-image.second-image {
+.phographers .single-image.second-image {
   margin: 0 100px;
   
 }
 
-.namerating {
+.phographers .namerating {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-.namerating h3 {
+.phographers .namerating h3 {
   width: 60%;
 }
-.rating {
+.phographers .rating {
   width: 18%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.namerating h3 {
+.phographers .namerating h3 {
   width: 70%;
   font-size: 22px;
   font-weight: 500;
 }
 
-.rating p {
+.phographers .rating p {
   font-size: 22px;
   width: 52%;
 }
 
-.rating span {
+.phographers .rating span {
   color: #901C1C;
   border: none;
   font-size: 22px;
   width: 10%;
 }
 
-.floating-cta {
+.phographers .floating-cta {
     display: flex;
     justify-content: flex-end;
     width: 23%;
@@ -334,7 +336,7 @@ label {
     right: 0;
     width: 300px;
   }
-.total-like {
+.phographers .total-like {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -408,6 +410,80 @@ nav li a {
   color: #901C1C;
   font-size: 12px;
   font-weight: 500;
+}
+.phographers .photographer-body__image {
+  flex-direction: column;
+}
+.single-image {
+  width: 93%;
+}
+.phographers .single-image.second-image {
+  margin: 0px 0px;
+}
+.phographers .single-image img {
+  width: 100%;
+  height: 350px;
+}
+.phographers .namerating h3 {
+  width: 82%;
+  margin-bottom: 20px;
+}
+.phographers .rating {
+  width: 10%;
+}
+.phographers .floating-cta {
+  display: flex;
+  justify-content: flex-end;
+  width: 23%;
+  background-color: #DB8876;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 41px;
+  right: 0;
+  width: 118px;
+  flex-direction: column;
+}
+.phographers ul {
+    justify-content: flex-start;
+    margin: 0 0px;
+    flex-wrap: wrap;
+}
+.phographers .single-image {
+  width: 90%;
+}
+.phographers .head-photographer-page .elements-a {
+  font-size: 35px !important;
+}
+.phographers .contactme-div button {
+  display: none;
+}
+.phographers .photographer-page a {
+  font-size: 13px;
+  padding: 4px;
+}
+.phographers .photographer-page-elements-content {
+  width: 55%;
+}
+.phographers .head-photographer-page .description {
+  font-size: 16px;
+}
+.phographers .photgrapher-image {
+  width: 30%;
+}
+.phographers .photgrapher-image img {
+  height: 120px;
+}
+.photographer-body__content.options {
+  display: flex;
+  justify-content: center;
+}
+.header-content-sec-2 {
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
 }
 }
 @media only screen and (max-width: 4000px) {
