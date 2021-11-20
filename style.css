@@ -269,12 +269,13 @@ body.phographers .logo {
   width: 27%;
   color:#901C1C;
 }
-
+.single-image img {}
 .phographers .single-image img {
   width:100%;
   height: 330px;
   object-fit: cover;
   border-radius: 7px;
+  overflow: hidden;
 }
 .phographers .photographer-body__image {
   margin-top: 30px;
@@ -343,6 +344,87 @@ body.phographers .logo {
   margin-right: 32px;
 }
 /* ------------------------------------------------------------------------------- */ 
+
+/* modal class for javascript */
+
+.modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100% ;
+  height: 100% ;
+  background-color: rgb(0 0 0 / 54%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal p {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+ .full-img {
+   position: absolute;
+   height: 70%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.5);
+   transition: all 0.25s ease-in-out;
+ }
+ .full-img.open {
+  transform: translate(-50%, -50%) scale(1);
+ }
+
+span.close {
+  font-size: 38px;
+  position: fixed;
+  top: 0;
+  right: 36px;
+  z-index: 100;
+  display: none;
+}
+
+/* end modal class for javascript */
+.image-container-hover {
+  overflow: hidden;
+}
+.image-container-hover img{
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.image-container-hover img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsiveness section */
 
@@ -416,6 +498,7 @@ nav li a {
 }
 .single-image {
   width: 93%;
+  overflow: hidden;
 }
 .phographers .single-image.second-image {
   margin: 0px 0px;
@@ -423,6 +506,8 @@ nav li a {
 .phographers .single-image img {
   width: 100%;
   height: 350px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 .phographers .namerating h3 {
   width: 82%;
@@ -480,7 +565,7 @@ nav li a {
   display: flex;
   justify-content: center;
 }
-.header-content-sec-2 {
+.phographers .header-content-sec-2 {
   flex-wrap: wrap;
   margin: 0 20px;
   justify-content: space-between;

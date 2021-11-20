@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Photographers page</title>  
 </head>
@@ -70,8 +71,13 @@
             </form>
        </div>
        <div class="photographer-body__image">
-           <div  class="single-image">
-               <img src="Sample Photos/Mimi/Animals_Rainbow.jpg" alt="Animals_Rainbow">
+           <div  class="single-image"  >
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Animals_Rainbow.jpg" alt="Animals_Rainbow" data-original="Sample Photos/Mimi/Animals_Rainbow.jpg">
+            </div>
+               <div class="closeses" >
+                <span class="close" id="close-btn"><i class="fas fa-times"></i></span>
+              </div>
                <div class="namerating">
                    <h3>Rainbow</h3>
                    <div class="rating">
@@ -80,8 +86,10 @@
                    </div>
                </div>
            </div>
-           <div  class="single-image second-image">
-               <img src="Sample Photos/Mimi/Event_BenevidesWedding.jpg" alt="Event_BenevidesWedding">
+           <div  class="single-image second-image" >
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Event_BenevidesWedding.jpg" alt="Event_BenevidesWedding" data-original="Sample Photos/Mimi/Event_BenevidesWedding.jpg">
+                </div>
                <div class="namerating">
                    <h3>BenevidesWedding</h3>
                    <div class="rating">
@@ -91,7 +99,9 @@
                </div>
            </div>
            <div  class="single-image">
-               <img src="Sample Photos/Mimi/Event_PintoWedding.jpg" alt="Event_PintoWedding.jpg">
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Event_PintoWedding.jpg" alt="Event_PintoWedding.jpg" data-original="Sample Photos/Mimi/Event_PintoWedding.jpg">
+                </div>
                <div class="namerating">
                    <h3>PintoWedding</h3>
                    <div class="rating">
@@ -103,7 +113,9 @@
        </div>
        <div class="photographer-body__image">
            <div  class="single-image">
-               <img src="/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="Event_SeasideWedding">
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="Event_SeasideWedding" data-original="Sample Photos/Mimi/Event_SeasideWedding.jpg">
+                </div>
                <div class="namerating">
                    <h3>SeasideWedding</h3>
                    <div class="rating">
@@ -112,9 +124,10 @@
                    </div>
                </div>
            </div>
-           <div  class="single-image second-image">
-               <img src="/Sample Photos/Mimi/Travel_Lonesome.jpg" alt="Animals_Rainbow" />
-               <figcaption>Caption goes here</figcaption>
+           <div  class="single-image second-image ">
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Travel_Lonesome.jpg" alt="Animals_Rainbow" data-original="Sample Photos/Mimi/Travel_Lonesome.jpg" />
+                </div>
                <div class="namerating">
                    <h3>Lonesome</h3>
                    <div class="rating">
@@ -123,8 +136,10 @@
                    </div>
                </div>
            </div>
-           <div  class="single-image">
-               <img src="/Sample Photos/Mimi/Travel_HillsideColor.jpg" alt="Animals_Rainbow">
+           <div  class="single-image ">
+               <div class="image-container-hover image-container" id="image-container">
+               <img src="Sample Photos/Mimi/Travel_HillsideColor.jpg" alt="Animals_Rainbow" data-original="Sample Photos/Mimi/Travel_HillsideColor.jpg">
+                </div>
                <div class="namerating">
                    <h3>Rainbow</h3>
                    <div class="rating">
@@ -134,6 +149,15 @@
                </div>
            </div>
        </div>
+<!-- ------------------------modal--------------- -->
+       <div class="modal">
+           <img src="" alt="" class="full-img" />
+           <p class="caption"></p>
+       </div>
+       
+<!-- ---------------------end modal--------------- -->
+
+<!-- ------------------------flaoting cta--------------- -->
        <div class="floating-cta">
            <div class="total-like">
                <p>297 081</p>
@@ -141,7 +165,9 @@
            </div>
            <div class="day">300$ / Day</div>
        </div>
+       <!-- ------------------------end flaoting cta--------------- -->
    </section>
   </article>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
