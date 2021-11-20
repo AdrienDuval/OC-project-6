@@ -3,6 +3,8 @@ const previews = document.querySelectorAll(".single-image img");
 const original = document.querySelector(".full-img");
 const caption = document.querySelector(".caption");
 
+// looping throw the images to get all the images together and add click event listener
+
 previews.forEach((preview) => {
     preview.addEventListener("click", () => {
         modal.classList.add("open");
