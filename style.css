@@ -390,6 +390,7 @@ span.close {
   right: 36px;
   z-index: 100;
   display: none;
+  cursor: pointer;
 }
 
 /* end modal class for javascript */
@@ -407,6 +408,29 @@ span.close {
   transform: scale(1.2);
 }
 
+.navigation-button {
+  display: none;
+}
+
+i.fas.fa-times {
+  color: #901C1C;
+}
+i.fas.fa-arrow-right {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  top: 50%;
+  position: fixed;
+  right: 3%;
+}
+i.fas.fa-arrow-left {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  top: 50%;
+  position:fixed;
+  left: 3%;
+}
 
 
 
@@ -573,6 +597,18 @@ nav li a {
   flex-wrap: wrap;
   margin: 0 20px;
   justify-content: space-between;
+}
+
+.full-img {
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+.modal p {
+  text-align: center;
+}
+span.close {
+  top: 28px;
 }
 }
 @media only screen and (max-width: 4000px) {

@@ -2,6 +2,10 @@ const modal = document.querySelector(".modal");
 const previews = document.querySelectorAll(".single-image img");
 const original = document.querySelector(".full-img");
 const caption = document.querySelector(".caption");
+const closeBtn = document.getElementById("close-btn");
+const navBtn = document.getElementById("nav-btn");
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
 
 // looping throw the images to get all the images together and add click event listener
 
@@ -9,6 +13,9 @@ previews.forEach((preview) => {
     preview.addEventListener("click", () => {
         modal.classList.add("open");
         original.classList.add("open");
+        navBtn.style.display = "none";
+        // show close btn
+        closeBtn.style.display = "block";
         // dynamic change text and image
         const originalSrc = preview.getAttribute("data-original");
         original.src = originalSrc;
@@ -16,21 +23,23 @@ previews.forEach((preview) => {
         caption.textContent = altText;
     });
 });
+
+function closeBtns () {
+    modal.classList.remove("open");
+    original.classList.remove("open");
+    navBtn.style.display = "none";
+    closeBtn.style.display = "none";
+}
+
 modal.addEventListener('click', (e) => {
    if (e.target.classList.contains("modal")) {
        modal.classList.remove("open");
        original.classList.remove("open");
+       closeBtn.style.display = "none";
+       navBtn.style.display = "none";
    }
 });
-
-
-
-
-
-
-
-
-
+closeBtn.addEventListener("click", closeBtns);
 
 
 
@@ -58,3 +67,28 @@ modal.addEventListener('click', (e) => {
 // }
 
 // modalBtn.addEventListener("click", enlargeImage);
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   const previews = document.querySelectorAll(".single-image img");
+//   if (n > previews.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = previews.length}
+//   for (i = 0; i < previews.length; i++) {
+//       previews[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   previews[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+// }
